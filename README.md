@@ -11,29 +11,13 @@
 
 Первый пример:
 
-```text
-C:\>testing.exe
-aaababb
-bbaaabab
-Result: aaabbab
-All word: 7
-Number of vowels: 4
-Number of consonants: 3
-```
+![Первый запуск: результат aaabbab, 4 гласные и 3 согласные](result-example-1.png)
 
 Здесь из первой строки берутся группы `aaa` и `a`, из второй — `bb` и `b`: `aaa` + `bb` + `a` + `b`.
 
 Второй пример — все гласные и согласные в двух строках:
 
-```text
-C:\>testing.exe
-aeioubaeiou
-bcdfghjklmnpqrstvwxyzabcd
-Result: aeioubcdfghjklmnpqrstvwxyzaeiou
-All word: 31
-Number of vowels: 10
-Number of consonants: 21
-```
+![Второй запуск: 31 буква, 10 гласных и 21 согласная](result-example-2.png)
 
 После второй группы гласных программа достигает конца первой строки и не присоединяет следующую группу согласных `bcd` из второй строки. Буква `a` перед ними пропускается как гласная второй строки.
 
